@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Reveal from "./Reveal";
 import { closingCta, ctaLabel } from "@/content/site";
 
@@ -21,12 +20,9 @@ export default function ClosingCta() {
             {closingCta.heading}
           </h2>
           <p className="m-0 text-[13px] text-body">{closingCta.body}</p>
-          <Link
-            href="#top"
-            className="bg-blue px-5 py-3 text-[11px] font-bold tracking-[0.07em] text-white uppercase hover:bg-blue-hover hover:text-white"
-          >
+          <span className="bg-blue px-5 py-3 text-[11px] font-bold tracking-[0.07em] text-white uppercase">
             {ctaLabel}
-          </Link>
+          </span>
         </Reveal>
       </div>
     </section>

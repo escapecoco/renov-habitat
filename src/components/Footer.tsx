@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   brand,
   contact,
@@ -44,15 +43,9 @@ export default function Footer() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-x-8 gap-y-[26px] py-[26px]">
           <div className="flex flex-col gap-[9px]">
             <h4 className="mt-0 mb-[3px] text-[13px] font-bold">Contact</h4>
-            <a href={contact.phonePrimaryHref} className="text-[12.5px] text-[#C9C9D2] hover:text-white">
-              {contact.phonePrimaryDisplay}
-            </a>
-            <a href={contact.phoneSecondaryHref} className="text-[12.5px] text-[#C9C9D2] hover:text-white">
-              {contact.phoneSecondaryDisplay}
-            </a>
-            <a href={contact.emailHref} className="text-[12.5px] text-[#C9C9D2] hover:text-white">
-              {contact.email}
-            </a>
+            <span className="text-[12.5px] text-[#C9C9D2]">{contact.phonePrimaryDisplay}</span>
+            <span className="text-[12.5px] text-[#C9C9D2]">{contact.phoneSecondaryDisplay}</span>
+            <span className="text-[12.5px] text-[#C9C9D2]">{contact.email}</span>
             <span className="text-[12.5px] text-[#C9C9D2]">{contact.city}</span>
           </div>
 
@@ -60,13 +53,9 @@ export default function Footer() {
             <div key={col.title} className="flex flex-col gap-[9px]">
               <h4 className="mt-0 mb-[3px] text-[13px] font-bold">{col.title}</h4>
               {col.links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-[12.5px] text-[#C9C9D2] hover:text-white"
-                >
+                <span key={link.label} className="text-[12.5px] text-[#C9C9D2]">
                   {link.label}
-                </Link>
+                </span>
               ))}
             </div>
           ))}
@@ -76,9 +65,9 @@ export default function Footer() {
           <span>{copyright}</span>
           <span className="flex gap-[18px]">
             {legalLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="text-[#9A9AA6] hover:text-white">
+              <span key={link.label} className="text-[#9A9AA6]">
                 {link.label}
-              </Link>
+              </span>
             ))}
           </span>
         </div>

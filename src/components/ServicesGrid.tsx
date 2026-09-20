@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PhotoTile from "./PhotoTile";
 import Reveal from "./Reveal";
 import { services } from "@/content/site";
@@ -16,8 +15,7 @@ export default function ServicesGrid() {
           {services.map((tile, i) =>
             "placeholder" in tile && tile.placeholder ? (
               <Reveal key={tile.label} delay={i * 0.05}>
-                <Link
-                  href="#soumission"
+                <div
                   className="relative block aspect-[4/3] overflow-hidden"
                   style={{
                     backgroundImage:
@@ -30,7 +28,7 @@ export default function ServicesGrid() {
                   <span className="absolute bottom-2.5 left-3 text-[13px] font-semibold text-ink">
                     {tile.label}
                   </span>
-                </Link>
+                </div>
               </Reveal>
             ) : (
               <Reveal key={tile.label} delay={i * 0.05}>

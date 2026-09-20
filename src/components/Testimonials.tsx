@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef } from "react";
 import Reveal from "./Reveal";
 import {
   testimonials,
@@ -9,16 +6,6 @@ import {
 } from "@/content/site";
 
 export default function Testimonials() {
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  function scrollBy(dir: 1 | -1) {
-    const el = trackRef.current;
-    if (!el) return;
-    const card = el.firstElementChild as HTMLElement | null;
-    const step = card ? card.getBoundingClientRect().width + 16 : el.clientWidth * 0.8;
-    el.scrollBy({ left: dir * step, behavior: "smooth" });
-  }
-
   return (
     <section className="bg-blue px-6 pt-[46px] pb-10">
       <div className="mx-auto max-w-[1180px]">
@@ -27,16 +14,12 @@ export default function Testimonials() {
             Ce que nos clients disent de nous
           </h2>
           <p className="mt-2 mb-4 text-[13px] text-[#DCE4FF]">{testimonialsSubline}</p>
-          <a
-            href="#avis"
-            className="inline-block bg-ink px-[18px] py-[11px] text-[11px] font-bold tracking-[0.07em] text-white uppercase hover:bg-white hover:text-ink"
-          >
+          <span className="inline-block bg-ink px-[18px] py-[11px] text-[11px] font-bold tracking-[0.07em] text-white uppercase">
             {googleReviewsLabel}
-          </a>
+          </span>
         </Reveal>
 
         <div
-          ref={trackRef}
           className="sc-track mt-[22px] grid grid-flow-col gap-4 overflow-x-auto pb-1"
           style={{
             gridAutoColumns: "minmax(min(300px,80%),1fr)",
@@ -64,20 +47,18 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-[18px] flex justify-end gap-3">
-          <button
-            onClick={() => scrollBy(-1)}
-            aria-label="Avis précédent"
-            className="flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-full border-[1.5px] border-white bg-transparent text-[15px] text-white hover:bg-white hover:text-blue"
+          <span
+            aria-hidden="true"
+            className="flex h-[38px] w-[38px] items-center justify-center rounded-full border-[1.5px] border-white bg-transparent text-[15px] text-white"
           >
             ‹
-          </button>
-          <button
-            onClick={() => scrollBy(1)}
-            aria-label="Avis suivant"
-            className="flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-full border-[1.5px] border-white bg-transparent text-[15px] text-white hover:bg-white hover:text-blue"
+          </span>
+          <span
+            aria-hidden="true"
+            className="flex h-[38px] w-[38px] items-center justify-center rounded-full border-[1.5px] border-white bg-transparent text-[15px] text-white"
           >
             ›
-          </button>
+          </span>
         </div>
       </div>
     </section>
