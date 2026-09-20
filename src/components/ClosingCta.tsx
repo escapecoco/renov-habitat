@@ -9,7 +9,7 @@ export default function ClosingCta() {
       <div className="relative mx-auto flex min-h-[clamp(220px,24vw,300px)] max-w-[1180px] items-center justify-center overflow-hidden px-5 py-[38px]">
         <Image
           src="/images/hero-salon.webp"
-          alt="Intérieur rénové par Rénov-Habitat"
+          alt="Intérieur rénové par Rénov Habitat"
           fill
           sizes="(min-width: 1180px) 1180px, 100vw"
           className="object-cover"

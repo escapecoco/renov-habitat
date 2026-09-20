@@ -2,8 +2,8 @@
 // avis, liens) sont centralisées ici pour faciliter les mises à jour futures.
 
 export const brand = {
-  name: "RÉNOV-HABITAT",
-  legalName: "Rénov-Habitat",
+  name: "RÉNOV HABITAT",
+  legalName: "Rénov Habitat",
 };
 
 export const contact = {
@@ -119,7 +119,7 @@ export const clientele = [
 export const testimonials = [
   {
     quote:
-      "Rénov-Habitat a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
+      "Rénov Habitat a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
     name: "Maired Raupach",
     tone: "light" as const,
   },
@@ -201,4 +201,4 @@ export const legalLinks = [
   { label: "Conditions d'utilisation", href: "#apropos" },
 ];
 
-export const copyright = "© 2024 Rénov-Habitat. Tous droits réservés.";
+export const copyright = "© 2024 Rénov Habitat. Tous droits réservés.";
