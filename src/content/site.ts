@@ -2,8 +2,8 @@
 // avis, liens) sont centralisées ici pour faciliter les mises à jour futures.
 
 export const brand = {
-  name: "APL RÉNOVATION",
-  legalName: "APL Rénovation Ltée",
+  name: "RÉNOV-HABITAT",
+  legalName: "Rénov-Habitat",
 };
 
 export const contact = {
@@ -12,8 +12,8 @@ export const contact = {
   phonePrimaryHref: "tel:18337604663",
   phoneSecondaryDisplay: "604-446-2773",
   phoneSecondaryHref: "tel:6044462773",
-  email: "info@aplrenovation.ca",
-  emailHref: "mailto:info@aplrenovation.ca",
+  email: "info@renov-habitat.ca",
+  emailHref: "mailto:info@renov-habitat.ca",
   city: "Vancouver, C.-B.",
 };
 
@@ -119,7 +119,7 @@ export const clientele = [
 export const testimonials = [
   {
     quote:
-      "APL a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
+      "Rénov-Habitat a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
     name: "Maired Raupach",
     tone: "light" as const,
   },
@@ -201,4 +201,4 @@ export const legalLinks = [
   { label: "Conditions d'utilisation", href: "#apropos" },
 ];
 
-export const copyright = "© 2024 APL Rénovation Ltée. Tous droits réservés.";
+export const copyright = "© 2024 Rénov-Habitat. Tous droits réservés.";

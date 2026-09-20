@@ -9,9 +9,9 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "APL Rénovation Ltée | Rénovation et remise en état, Vancouver",
+  title: "Rénov-Habitat | Rénovation et remise en état, Vancouver",
   description:
-    "APL Rénovation Ltée intervient à Vancouver pour la rénovation et la remise en état après dégât d'eau, incendie ou moisissure — jour et nuit, 24h/24 et 7j/7.",
+    "Rénov-Habitat intervient à Vancouver pour la rénovation et la remise en état après dégât d'eau, incendie ou moisissure — jour et nuit, 24h/24 et 7j/7.",
 };
 
 export default function RootLayout({
