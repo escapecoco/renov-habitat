@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PhotoTile from "./PhotoTile";
 import Reveal from "./Reveal";
 import { services } from "@/content/site";
@@ -15,7 +16,8 @@ export default function ServicesGrid() {
           {services.map((tile, i) =>
             "placeholder" in tile && tile.placeholder ? (
               <Reveal key={tile.label} delay={i * 0.05}>
-                <div
+                <Link
+                  href={tile.href}
                   className="relative block aspect-[4/3] overflow-hidden"
                   style={{
                     backgroundImage:
@@ -28,13 +30,14 @@ export default function ServicesGrid() {
                   <span className="absolute bottom-2.5 left-3 text-[13px] font-semibold text-ink">
                     {tile.label}
                   </span>
-                </div>
+                </Link>
               </Reveal>
             ) : (
               <Reveal key={tile.label} delay={i * 0.05}>
                 <PhotoTile
                   image={(tile as { image: string }).image}
                   label={tile.label}
+                  href={tile.href}
                   aspectClass="aspect-[4/3]"
                   gradient="linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%)"
                   labelClassName="absolute bottom-2.5 left-3 text-[13px] font-semibold text-white"

@@ -17,6 +17,7 @@ export default function RestorationMosaic() {
               <PhotoTile
                 image={tile.image}
                 label={tile.label}
+                href={tile.href}
                 aspectClass="aspect-video"
                 gradient="linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,0.62) 100%)"
                 labelClassName="absolute left-4 bottom-3.5 text-[clamp(17px,1.7vw,21px)] font-bold text-white"

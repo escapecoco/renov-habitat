@@ -49,38 +49,55 @@ export const partners = [
 export type PhotoTile = {
   label: string;
   image: string;
+  href: string;
   placeholder?: false;
 };
 export type PlaceholderTile = {
   label: string;
   placeholder: true;
   caption: string;
+  href: string;
 };
 
+const remiseEnEtatHref = "/services/remise-en-etat";
+const renovationHref = "/services/renovation";
+
 export const restorationServices: PhotoTile[] = [
-  { label: "Intervention d'urgence", image: "urgence-tempete" },
-  { label: "Dégât d'eau", image: "degat-eau" },
-  { label: "Incendie et fumée", image: "incendie-fumee" },
-  { label: "Élimination des moisissures", image: "moisissures" },
+  { label: "Intervention d'urgence", image: "urgence-tempete", href: remiseEnEtatHref },
+  { label: "Dégât d'eau", image: "degat-eau", href: remiseEnEtatHref },
+  { label: "Incendie et fumée", image: "incendie-fumee", href: remiseEnEtatHref },
+  { label: "Élimination des moisissures", image: "moisissures", href: remiseEnEtatHref },
 ];
 
 export const services: (PhotoTile | PlaceholderTile)[] = [
-  { label: "Installation", placeholder: true, caption: "photo installation" },
-  { label: "Travaux", image: "travaux" },
-  { label: "Revêtement de sol", image: "revetement-sol" },
-  { label: "Carrelage", image: "carrelage" },
+  {
+    label: "Installation",
+    placeholder: true,
+    caption: "photo installation",
+    href: renovationHref,
+  },
+  { label: "Travaux", image: "travaux", href: renovationHref },
+  { label: "Revêtement de sol", image: "revetement-sol", href: renovationHref },
+  { label: "Carrelage", image: "carrelage", href: renovationHref },
   {
     label: "Finition de salle de bain",
     placeholder: true,
     caption: "photo salle de bain",
+    href: renovationHref,
   },
   {
     label: "Aménagement de sous-sol",
     placeholder: true,
     caption: "photo sous-sol",
+    href: renovationHref,
   },
-  { label: "Peinture", image: "peinture" },
-  { label: "Démolition", placeholder: true, caption: "photo démolition" },
+  { label: "Peinture", image: "peinture", href: renovationHref },
+  {
+    label: "Démolition",
+    placeholder: true,
+    caption: "photo démolition",
+    href: remiseEnEtatHref,
+  },
 ];
 
 export const clientele = [
