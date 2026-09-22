@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   brand,
   contact,
@@ -52,11 +53,21 @@ export default function Footer() {
           {footerColumns.map((col) => (
             <div key={col.title} className="flex flex-col gap-[9px]">
               <h4 className="mt-0 mb-[3px] text-[13px] font-bold">{col.title}</h4>
-              {col.links.map((link) => (
-                <span key={link.label} className="text-[12.5px] text-[#C9C9D2]">
-                  {link.label}
-                </span>
-              ))}
+              {col.links.map((link) =>
+                link.href.startsWith("#") ? (
+                  <span key={link.label} className="text-[12.5px] text-[#C9C9D2]">
+                    {link.label}
+                  </span>
+                ) : (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-[12.5px] text-[#C9C9D2] hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                ),
+              )}
             </div>
           ))}
         </div>
@@ -65,9 +76,9 @@ export default function Footer() {
           <span>{copyright}</span>
           <span className="flex gap-[18px]">
             {legalLinks.map((link) => (
-              <span key={link.label} className="text-[#9A9AA6]">
+              <Link key={link.label} href={link.href} className="text-[#9A9AA6] hover:text-white">
                 {link.label}
-              </span>
+              </Link>
             ))}
           </span>
         </div>

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -19,7 +21,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={`${archivo.variable}`}>
-      <body>{children}</body>
+      <body className="w-full overflow-x-hidden bg-white">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,12 +1,16 @@
+import Link from "next/link";
 import { brand, contact, nav, ctaLabel } from "@/content/site";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-rule bg-white">
       <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-7 px-6 py-3.5">
-        <span className="whitespace-nowrap text-[17px] font-extrabold tracking-[-0.01em] text-ink">
+        <Link
+          href="/"
+          className="whitespace-nowrap text-[17px] font-extrabold tracking-[-0.01em] text-ink hover:text-ink"
+        >
           {brand.name}
-        </span>
+        </Link>
 
         <div className="flex flex-col gap-0.5 text-[11px] leading-[1.35] text-body">
           <span>{contact.emergencyLabel}</span>
@@ -17,7 +21,9 @@ export default function Header() {
 
         <nav className="ml-auto flex items-center gap-[26px] text-[13px] font-medium text-[#2A2A33]">
           {nav.map((item) => (
-            <span key={item.href}>{item.label}</span>
+            <Link key={item.href} href={item.href} className="hover:text-blue">
+              {item.label}
+            </Link>
           ))}
           <span className="rounded-[2px] bg-blue px-[18px] py-[11px] text-[11px] font-bold tracking-[0.06em] text-white uppercase">
             {ctaLabel}

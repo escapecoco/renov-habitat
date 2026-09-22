@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import { HouseIcon, BuildingIcon, PersonIcon } from "./icons";
 import { clientele } from "@/content/site";
@@ -33,9 +34,12 @@ export default function Clientele() {
             );
           })}
         </div>
-        <span className="mt-[26px] inline-flex items-center gap-[14px] border-[1.5px] border-ink px-5 py-3 text-[11px] font-bold tracking-[0.09em] text-ink uppercase">
+        <Link
+          href="/clientele"
+          className="mt-[26px] inline-flex items-center gap-[14px] border-[1.5px] border-ink px-5 py-3 text-[11px] font-bold tracking-[0.09em] text-ink uppercase hover:bg-ink hover:text-white"
+        >
           Voir tous <span className="text-[14px]">→</span>
-        </span>
+        </Link>
       </div>
     </section>
   );

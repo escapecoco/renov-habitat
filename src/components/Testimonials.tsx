@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import {
   testimonials,
@@ -14,9 +15,12 @@ export default function Testimonials() {
             Ce que nos clients disent de nous
           </h2>
           <p className="mt-2 mb-4 text-[13px] text-[#DCE4FF]">{testimonialsSubline}</p>
-          <span className="inline-block bg-ink px-[18px] py-[11px] text-[11px] font-bold tracking-[0.07em] text-white uppercase">
+          <Link
+            href="/avis"
+            className="inline-block bg-ink px-[18px] py-[11px] text-[11px] font-bold tracking-[0.07em] text-white uppercase hover:bg-white hover:text-ink"
+          >
             {googleReviewsLabel}
-          </span>
+          </Link>
         </Reveal>
 
         <div
