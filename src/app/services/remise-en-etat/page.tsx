@@ -7,7 +7,7 @@ import { remiseEnEtatDetail } from "@/content/site";
 export const metadata: Metadata = {
   title: "Remise en état | Rénov Habitat",
   description:
-    "Dégât d'eau, incendie, moisissure : intervention d'urgence 24h/24 et 7j/7 à Vancouver et remise en état complète après sinistre.",
+    "Dégât d'eau, incendie, moisissure : intervention d'urgence 24h/24 et 7j/7 à Toulouse et remise en état complète après sinistre.",
 };
 
 export default function RemiseEnEtatPage() {

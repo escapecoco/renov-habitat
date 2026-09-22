@@ -8,7 +8,7 @@ import { servicesHub } from "@/content/site";
 export const metadata: Metadata = {
   title: "Nos services | Rénov Habitat",
   description:
-    "Rénovation et remise en état après sinistre à Vancouver : découvrez les deux volets de nos services.",
+    "Rénovation et remise en état après sinistre à Toulouse : découvrez les deux volets de nos services.",
 };
 
 export default function ServicesPage() {

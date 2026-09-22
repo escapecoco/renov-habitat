@@ -9,7 +9,7 @@ import { aboutPage, trustBadges } from "@/content/site";
 export const metadata: Metadata = {
   title: "À propos | Rénov Habitat",
   description:
-    "Entreprise canadienne de rénovation et de remise en état basée à Vancouver, certifiée IICRC, garantie 3 ans.",
+    "Entreprise française de rénovation et de remise en état basée à Toulouse, certifiée IICRC, garantie 3 ans.",
 };
 
 export default function AProposPage() {

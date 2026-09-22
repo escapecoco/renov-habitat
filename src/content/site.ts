@@ -6,15 +6,16 @@ export const brand = {
   legalName: "Rénov Habitat",
 };
 
+// ⚠️ Numéros à remplacer par les vrais numéros de l'entreprise avant mise en ligne définitive.
 export const contact = {
   emergencyLabel: "Service d'urgence 24h/24 et 7j/7",
-  phonePrimaryDisplay: "1-833-760-NORD (1-833-760-4663)",
-  phonePrimaryHref: "tel:18337604663",
-  phoneSecondaryDisplay: "604-446-2773",
-  phoneSecondaryHref: "tel:6044462773",
-  email: "info@renov-habitat.ca",
-  emailHref: "mailto:info@renov-habitat.ca",
-  city: "Vancouver, C.-B.",
+  phonePrimaryDisplay: "05 61 00 00 00",
+  phonePrimaryHref: "tel:0561000000",
+  phoneSecondaryDisplay: "06 00 00 00 00",
+  phoneSecondaryHref: "tel:0600000000",
+  email: "info@renov-habitat.fr",
+  emailHref: "mailto:info@renov-habitat.fr",
+  city: "Toulouse, France",
 };
 
 export const nav = [
@@ -179,7 +180,6 @@ export const closingCta = {
 };
 
 export const trustBadges = [
-  { color: "#D8232A", shape: "rect" as const, label: "Entreprise\ncanadienne" },
   { color: "#1544F5", shape: "diamond" as const, label: "Garantie\n3 ans" },
   { color: "#2E8B57", shape: "circle" as const, label: "IICRC\ncertifié" },
 ];
@@ -292,7 +292,7 @@ export const remiseEnEtatDetail = [
   },
   {
     title: "Élimination des moisissures",
-    body: "Détection, confinement et retrait sécuritaire de la moisissure, avec protection contre la poussière et stérilisation des surfaces traitées.",
+    body: "Détection, confinement et retrait sécurisé de la moisissure, avec protection contre la poussière et stérilisation des surfaces traitées.",
   },
   {
     title: "Démolition",
@@ -302,7 +302,7 @@ export const remiseEnEtatDetail = [
 
 export const aboutPage = {
   intro:
-    "Rénov Habitat est une entreprise canadienne de rénovation et de remise en état basée à Vancouver. Nous intervenons aussi bien sur des projets de rénovation planifiés que sur des urgences liées à un dégât d'eau, un incendie ou une moisissure.",
+    "Rénov Habitat est une entreprise française de rénovation et de remise en état basée à Toulouse. Nous intervenons aussi bien sur des projets de rénovation planifiés que sur des urgences liées à un dégât d'eau, un incendie ou une moisissure.",
   story:
     "Fondée par des gens de métier, l'entreprise s'est construite autour d'une idée simple : une seule équipe, responsable du premier appel jusqu'à la fin des travaux, sans sous-traitance en cascade ni mauvaises surprises sur la facture.",
   values: [
@@ -369,7 +369,7 @@ export const privacyPolicy = {
     },
     {
       title: "Conservation et sécurité",
-      body: "Vos renseignements sont conservés le temps nécessaire à la réalisation des travaux et au suivi de garantie, puis supprimés ou archivés de façon sécuritaire, conformément à la législation canadienne applicable en matière de protection des renseignements personnels.",
+      body: "Vos renseignements sont conservés le temps nécessaire à la réalisation des travaux et au suivi de garantie, puis supprimés ou archivés de façon sécurisée, conformément au Règlement général sur la protection des données (RGPD) et à la législation française applicable.",
     },
     {
       title: "Vos droits",
