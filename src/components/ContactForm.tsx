@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import {
   contact,
@@ -29,6 +29,19 @@ export default function ContactForm() {
   const [city, setCity] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<Status>("idle");
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState<number>();
+
+  useEffect(() => {
+    const el = contentRef.current;
+    if (!el) return;
+    const observer = new ResizeObserver((entries) => {
+      setContentHeight(entries[0].contentRect.height);
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const options = need === "urgence" ? remiseEnEtatDetail : renovationDetail;
 
@@ -172,15 +185,21 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={step}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -20 }}
-          transition={{ duration: 0.25, ease: "easeOut" }}
-        >
-          {step === 0 && (
+      <motion.div
+        animate={{ height: contentHeight }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        style={{ overflow: "hidden" }}
+      >
+        <div ref={contentRef}>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={step}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              {step === 0 && (
             <div>
               <h2 className="m-0 mb-1 text-[19px] font-bold text-ink">
                 De quoi avez-vous besoin ?
@@ -352,8 +371,10 @@ export default function ContactForm() {
               </div>
             </div>
           )}
-        </motion.div>
-      </AnimatePresence>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </motion.div>
 
       <div className="mt-8 flex items-center justify-between gap-3 border-t border-rule pt-6">
         {step > 0 ? (
