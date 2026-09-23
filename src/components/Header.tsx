@@ -6,11 +6,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-rule bg-white">
       <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-7 px-6 py-3.5">
-        <Link href="/" className="flex items-center gap-2.5 whitespace-nowrap hover:text-ink">
-          <Image src="/logo/logo-icon.webp" alt="" width={32} height={32} priority />
-          <span className="text-[17px] font-extrabold tracking-[-0.01em] text-ink">
-            {brand.name}
-          </span>
+        <Link href="/" className="flex items-center whitespace-nowrap">
+          <Image
+            src="/logo/logo-full.webp"
+            alt={brand.legalName}
+            width={660}
+            height={220}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <div className="flex flex-col gap-0.5 text-[11px] leading-[1.35] text-body">
