@@ -8,7 +8,7 @@ import { clientele } from "@/content/site";
 const icons = { house: HouseIcon, building: BuildingIcon, person: PersonIcon };
 
 export const metadata: Metadata = {
-  title: "À qui nous servons | Rénov Habitat",
+  title: "À qui nous servons | Rénov Habitat-TLS",
   description:
     "Propriétés résidentielles, commerciales et professionnels de l'assurance : qui nous accompagnons à Toulouse.",
 };

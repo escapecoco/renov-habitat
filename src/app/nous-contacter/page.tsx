@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import { contactForm } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Nous contacter | Rénov Habitat",
+  title: "Nous contacter | Rénov Habitat-TLS",
   description: "Demandez une soumission gratuite en quelques étapes.",
 };
 

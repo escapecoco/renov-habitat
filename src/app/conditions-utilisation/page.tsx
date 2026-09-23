@@ -4,8 +4,8 @@ import Reveal from "@/components/Reveal";
 import { termsOfUse } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Conditions d'utilisation | Rénov Habitat",
-  description: "Conditions d'utilisation du site de Rénov Habitat.",
+  title: "Conditions d'utilisation | Rénov Habitat-TLS",
+  description: "Conditions d'utilisation du site de Rénov Habitat-TLS.",
 };
 
 export default function TermsOfUsePage() {

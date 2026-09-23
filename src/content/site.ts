@@ -2,8 +2,8 @@
 // avis, liens) sont centralisées ici pour faciliter les mises à jour futures.
 
 export const brand = {
-  name: "RÉNOV HABITAT",
-  legalName: "Rénov Habitat",
+  name: "RÉNOV HABITAT-TLS",
+  legalName: "Rénov Habitat-TLS",
 };
 
 // ⚠️ Numéros à remplacer par les vrais numéros de l'entreprise avant mise en ligne définitive.
@@ -156,7 +156,7 @@ export const clientele = [
 export const testimonials = [
   {
     quote:
-      "Rénov Habitat a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
+      "Rénov Habitat-TLS a été très facile à contacter et m'a tenu informé de chaque étape, tout était clair.",
     name: "Maired Raupach",
     tone: "light" as const,
   },
@@ -238,7 +238,7 @@ export const legalLinks = [
   { label: "Conditions d'utilisation", href: "/conditions-utilisation" },
 ];
 
-export const copyright = "© 2024 Rénov Habitat. Tous droits réservés.";
+export const copyright = "© 2024 Rénov Habitat-TLS. Tous droits réservés.";
 
 // --- Pages de détail (services, à propos, avis, pages légales) ---
 
@@ -319,7 +319,7 @@ export const remiseEnEtatDetail = [
 
 export const aboutPage = {
   intro:
-    "Rénov Habitat est une entreprise française de rénovation et de remise en état basée à Toulouse. Nous intervenons aussi bien sur des projets de rénovation planifiés que sur des urgences liées à un dégât d'eau, un incendie ou une moisissure.",
+    "Rénov Habitat-TLS est une entreprise française de rénovation et de remise en état basée à Toulouse. Nous intervenons aussi bien sur des projets de rénovation planifiés que sur des urgences liées à un dégât d'eau, un incendie ou une moisissure.",
   story:
     "Fondée par des gens de métier, l'entreprise s'est construite autour d'une idée simple : une seule équipe, responsable du premier appel jusqu'à la fin des travaux, sans sous-traitance en cascade ni mauvaises surprises sur la facture.",
   values: [
@@ -376,7 +376,7 @@ export const legalNotice = {
   sections: [
     {
       title: "Éditeur du site",
-      body: "Rénov Habitat, [à compléter — forme juridique, ex. SASU], au capital de [à compléter] €. Siège social : [à compléter — adresse complète], Toulouse, France. SIRET : [à compléter]. RCS Toulouse : [à compléter]. TVA intracommunautaire : [à compléter].",
+      body: "Rénov Habitat-TLS, [à compléter — forme juridique, ex. SASU], au capital de [à compléter] €. Siège social : [à compléter — adresse complète], Toulouse, France. SIRET : [à compléter]. RCS Toulouse : [à compléter]. TVA intracommunautaire : [à compléter].",
     },
     {
       title: "Directeur de la publication",
@@ -392,7 +392,7 @@ export const legalNotice = {
     },
     {
       title: "Propriété intellectuelle",
-      body: "L'ensemble des textes, photographies et éléments visuels présents sur ce site est la propriété de Rénov Habitat, sauf mention contraire, et ne peut être reproduit sans autorisation écrite préalable.",
+      body: "L'ensemble des textes, photographies et éléments visuels présents sur ce site est la propriété de Rénov Habitat-TLS, sauf mention contraire, et ne peut être reproduit sans autorisation écrite préalable.",
     },
     {
       title: "Litiges",
@@ -432,7 +432,7 @@ export const termsOfUse = {
   sections: [
     {
       title: "Objet du site",
-      body: "Ce site présente les services de rénovation et de remise en état de Rénov Habitat. Il a un but informatif et ne constitue pas une soumission ferme tant qu'un devis écrit n'a pas été émis.",
+      body: "Ce site présente les services de rénovation et de remise en état de Rénov Habitat-TLS. Il a un but informatif et ne constitue pas une soumission ferme tant qu'un devis écrit n'a pas été émis.",
     },
     {
       title: "Exactitude du contenu",
@@ -440,7 +440,7 @@ export const termsOfUse = {
     },
     {
       title: "Propriété intellectuelle",
-      body: "Les textes, photos et éléments visuels de ce site sont la propriété de Rénov Habitat et ne peuvent être reproduits sans autorisation écrite préalable.",
+      body: "Les textes, photos et éléments visuels de ce site sont la propriété de Rénov Habitat-TLS et ne peuvent être reproduits sans autorisation écrite préalable.",
     },
     {
       title: "Garanties de travaux",
@@ -448,7 +448,7 @@ export const termsOfUse = {
     },
     {
       title: "Limitation de responsabilité",
-      body: "Rénov Habitat ne peut être tenue responsable des dommages indirects résultant de l'utilisation de ce site. En cas de sinistre, contactez-nous directement pour toute question urgente.",
+      body: "Rénov Habitat-TLS ne peut être tenue responsable des dommages indirects résultant de l'utilisation de ce site. En cas de sinistre, contactez-nous directement pour toute question urgente.",
     },
   ],
 };

@@ -4,8 +4,8 @@ import Reveal from "@/components/Reveal";
 import { privacyPolicy } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité | Rénov Habitat",
-  description: "Comment Rénov Habitat recueille, utilise et protège vos renseignements personnels.",
+  title: "Politique de confidentialité | Rénov Habitat-TLS",
+  description: "Comment Rénov Habitat-TLS recueille, utilise et protège vos renseignements personnels.",
 };
 
 export default function PrivacyPolicyPage() {

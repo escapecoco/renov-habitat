@@ -11,9 +11,9 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Rénov Habitat | Rénovation et remise en état, Toulouse",
+  title: "Rénov Habitat-TLS | Rénovation et remise en état, Toulouse",
   description:
-    "Rénov Habitat intervient à Toulouse pour la rénovation et la remise en état après dégât d'eau, incendie ou moisissure — jour et nuit, 24h/24 et 7j/7.",
+    "Rénov Habitat-TLS intervient à Toulouse pour la rénovation et la remise en état après dégât d'eau, incendie ou moisissure — jour et nuit, 24h/24 et 7j/7.",
 };
 
 export default function RootLayout({

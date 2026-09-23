@@ -5,7 +5,7 @@ import ClosingCta from "@/components/ClosingCta";
 import { testimonials, avisPage } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Avis clients | Rénov Habitat",
+  title: "Avis clients | Rénov Habitat-TLS",
   description: "Note moyenne de 5 étoiles sur plus de 100 avis Google.",
 };
 

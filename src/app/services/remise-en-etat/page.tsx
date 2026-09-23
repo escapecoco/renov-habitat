@@ -5,7 +5,7 @@ import ClosingCta from "@/components/ClosingCta";
 import { remiseEnEtatDetail } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Remise en état | Rénov Habitat",
+  title: "Remise en état | Rénov Habitat-TLS",
   description:
     "Dégât d'eau, incendie, moisissure : intervention d'urgence 24h/24 et 7j/7 à Toulouse et remise en état complète après sinistre.",
 };

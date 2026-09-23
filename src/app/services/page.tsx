@@ -6,7 +6,7 @@ import ClosingCta from "@/components/ClosingCta";
 import { servicesHub } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Nos services | Rénov Habitat",
+  title: "Nos services | Rénov Habitat-TLS",
   description:
     "Rénovation et remise en état après sinistre à Toulouse : découvrez les deux volets de nos services.",
 };

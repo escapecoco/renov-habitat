@@ -7,7 +7,7 @@ import ClosingCta from "@/components/ClosingCta";
 import { aboutPage, trustBadges } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "À propos | Rénov Habitat",
+  title: "À propos | Rénov Habitat-TLS",
   description:
     "Entreprise française de rénovation et de remise en état basée à Toulouse, certifiée IICRC, garantie 3 ans.",
 };

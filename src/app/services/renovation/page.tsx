@@ -5,7 +5,7 @@ import ClosingCta from "@/components/ClosingCta";
 import { renovationDetail } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Rénovation | Rénov Habitat",
+  title: "Rénovation | Rénov Habitat-TLS",
   description:
     "Gypse, portes et moulures, revêtement de sol, carrelage, peinture, salle de bain, sous-sol : nos services de rénovation à Toulouse.",
 };

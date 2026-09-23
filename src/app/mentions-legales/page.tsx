@@ -4,8 +4,8 @@ import Reveal from "@/components/Reveal";
 import { legalNotice } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Mentions légales | Rénov Habitat",
-  description: "Mentions légales du site de Rénov Habitat.",
+  title: "Mentions légales | Rénov Habitat-TLS",
+  description: "Mentions légales du site de Rénov Habitat-TLS.",
 };
 
 export default function MentionsLegalesPage() {
