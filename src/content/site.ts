@@ -217,6 +217,7 @@ export const footerColumns = [
 ];
 
 export const legalLinks = [
+  { label: "Mentions légales", href: "/mentions-legales" },
   { label: "Politique de confidentialité", href: "/politique-de-confidentialite" },
   { label: "Conditions d'utilisation", href: "/conditions-utilisation" },
 ];
@@ -348,6 +349,38 @@ export const avisPage = {
         "Communication claire avec notre assureur, ça nous a évité beaucoup de démarches.",
       name: "David Ferreira",
       tone: "lighter" as const,
+    },
+  ],
+};
+
+// ⚠️ Champs marqués [à compléter] : informations légales réelles à fournir
+// (forme juridique, SIRET, capital social, RCS...) avant mise en ligne définitive.
+export const legalNotice = {
+  updated: "Dernière mise à jour : septembre 2026",
+  sections: [
+    {
+      title: "Éditeur du site",
+      body: "Rénov Habitat, [à compléter — forme juridique, ex. SASU], au capital de [à compléter] €. Siège social : [à compléter — adresse complète], Toulouse, France. SIRET : [à compléter]. RCS Toulouse : [à compléter]. TVA intracommunautaire : [à compléter].",
+    },
+    {
+      title: "Directeur de la publication",
+      body: "[À compléter — nom du responsable de publication, généralement le gérant ou président de l'entreprise].",
+    },
+    {
+      title: "Contact",
+      body: `${contact.email} — ${contact.phonePrimaryDisplay}`,
+    },
+    {
+      title: "Hébergement",
+      body: "Ce site est hébergé par Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis.",
+    },
+    {
+      title: "Propriété intellectuelle",
+      body: "L'ensemble des textes, photographies et éléments visuels présents sur ce site est la propriété de Rénov Habitat, sauf mention contraire, et ne peut être reproduit sans autorisation écrite préalable.",
+    },
+    {
+      title: "Litiges",
+      body: "Le présent site est soumis au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.",
     },
   ],
 };
