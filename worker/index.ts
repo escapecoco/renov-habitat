@@ -13,7 +13,7 @@
 
 import { EmailMessage } from "cloudflare:email";
 
-const FROM_ADDRESS = "noreply@renov-habitat.fr";
+const FROM_ADDRESS = "noreply@renovhabitat-tls.fr";
 const TO_ADDRESS = "saad.hamdi.coco@gmail.com";
 
 function buildRawEmail({ from, to, subject, text }) {

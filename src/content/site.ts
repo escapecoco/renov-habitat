@@ -13,8 +13,8 @@ export const contact = {
   phonePrimaryHref: "tel:0561000000",
   phoneSecondaryDisplay: "06 00 00 00 00",
   phoneSecondaryHref: "tel:0600000000",
-  email: "info@renov-habitat.fr",
-  emailHref: "mailto:info@renov-habitat.fr",
+  email: "contact@renovhabitat-tls.fr",
+  emailHref: "mailto:contact@renovhabitat-tls.fr",
   city: "Toulouse, France",
 };
 
