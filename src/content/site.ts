@@ -18,6 +18,22 @@ export const contact = {
   city: "Toulouse, France",
 };
 
+// L'envoi passe par le Worker Cloudflare (voir worker/index.ts) via Email
+// Routing — ne fonctionnera qu'une fois un domaine connecté à Cloudflare.
+export const contactForm = {
+  heading: "Demander une soumission gratuite",
+  intro:
+    "Quatre étapes, deux minutes. On vous répond sous 24h — plus vite encore en cas d'urgence.",
+  successTitle: "Demande envoyée !",
+  successBody:
+    "Merci, votre demande a bien été reçue. Notre équipe vous recontacte sous 24h.",
+  successUrgentNote:
+    "En cas d'urgence, appelez-nous directement plutôt que d'attendre notre rappel :",
+  errorTitle: "Un problème est survenu",
+  errorBody:
+    "Votre demande n'a pas pu être envoyée. Vous pouvez réessayer, ou nous appeler directement :",
+};
+
 export const nav = [
   { label: "Nos services", href: "/services" },
   { label: "À qui nous servons", href: "/clientele" },
@@ -211,7 +227,7 @@ export const footerColumns = [
       { label: "À propos", href: "/a-propos" },
       { label: "Nos services", href: "/services" },
       { label: "Secteurs desservis", href: "/clientele" },
-      { label: "Nous contacter", href: "#soumission" },
+      { label: "Nous contacter", href: "/nous-contacter" },
     ],
   },
 ];

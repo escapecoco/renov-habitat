@@ -25,9 +25,12 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <span className="rounded-[2px] bg-blue px-[18px] py-[11px] text-[11px] font-bold tracking-[0.06em] text-white uppercase">
+          <Link
+            href="/nous-contacter"
+            className="rounded-[2px] bg-blue px-[18px] py-[11px] text-[11px] font-bold tracking-[0.06em] text-white uppercase hover:bg-blue-hover hover:text-white"
+          >
             {ctaLabel}
-          </span>
+          </Link>
         </nav>
       </div>
     </header>

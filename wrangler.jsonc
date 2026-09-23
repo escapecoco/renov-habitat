@@ -1,9 +1,19 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "renov-habitat",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-09-20",
   "assets": {
     "directory": "./out",
-    "not_found_handling": "404-page"
-  }
+    "not_found_handling": "404-page",
+    "binding": "ASSETS"
+  },
+  // ⚠️ destination_address doit être vérifiée dans Cloudflare (Email Routing)
+  // une fois un domaine connecté — voir worker/index.ts pour les étapes.
+  "send_email": [
+    {
+      "name": "SEND_EMAIL",
+      "destination_address": "saad.hamdi.coco@gmail.com"
+    }
+  ]
 }

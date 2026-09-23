@@ -42,3 +42,29 @@ export function CalendarIcon() {
     </svg>
   );
 }
+
+export function CheckCircleIcon() {
+  return (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#1544F5" strokeWidth={2}>
+      <circle cx="24" cy="24" r="21" />
+      <path d="M15 24 L21 30 L33 17" />
+    </svg>
+  );
+}
+
+export function AlertCircleIcon() {
+  return (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#D8232A" strokeWidth={2}>
+      <circle cx="24" cy="24" r="21" />
+      <path d="M24 14 V26 M24 33 V33.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function ShieldIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E6E78" strokeWidth={1.8}>
+      <path d="M12 3 L21 6.5 V12 C21 17 17.5 20.5 12 22 C6.5 20.5 3 17 3 12 V6.5 Z" />
+    </svg>
+  );
+}
