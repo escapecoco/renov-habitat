@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   brand,
@@ -28,7 +29,8 @@ export default function Footer() {
     <footer className="bg-ink px-6 pt-[34px] pb-5 text-white">
       <div className="mx-auto max-w-[1180px]">
         <div className="flex flex-wrap items-center justify-between gap-x-10 gap-y-6 border-b border-white/14 pb-7">
-          <span className="max-w-[170px] text-[19px] leading-[1.2] font-bold">
+          <span className="flex max-w-[220px] items-center gap-2.5 text-[19px] leading-[1.2] font-bold">
+            <Image src="/logo/logo-icon.webp" alt="" width={28} height={28} />
             {brand.legalName}
           </span>
           {trustBadges.map((badge) => (
