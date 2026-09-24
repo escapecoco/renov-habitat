@@ -87,34 +87,14 @@ export const restorationServices: PhotoTile[] = [
 ];
 
 export const services: (PhotoTile | PlaceholderTile)[] = [
-  {
-    label: "Installation",
-    placeholder: true,
-    caption: "photo installation",
-    href: renovationHref,
-  },
+  { label: "Installation", image: "installation", href: renovationHref },
   { label: "Travaux", image: "travaux", href: renovationHref },
   { label: "Revêtement de sol", image: "revetement-sol", href: renovationHref },
   { label: "Carrelage", image: "carrelage", href: renovationHref },
-  {
-    label: "Finition de salle de bain",
-    placeholder: true,
-    caption: "photo salle de bain",
-    href: renovationHref,
-  },
-  {
-    label: "Aménagement de sous-sol",
-    placeholder: true,
-    caption: "photo sous-sol",
-    href: renovationHref,
-  },
+  { label: "Finition de salle de bain", image: "salle-de-bain", href: renovationHref },
+  { label: "Aménagement de sous-sol", image: "sous-sol", href: renovationHref },
   { label: "Peinture", image: "peinture", href: renovationHref },
-  {
-    label: "Démolition",
-    placeholder: true,
-    caption: "photo démolition",
-    href: remiseEnEtatHref,
-  },
+  { label: "Démolition", image: "demolition", href: remiseEnEtatHref },
 ];
 
 export const clientele = [
