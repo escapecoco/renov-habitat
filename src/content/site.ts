@@ -215,7 +215,7 @@ export const legalLinks = [
   { label: "Conditions d'utilisation", href: "/conditions-utilisation" },
 ];
 
-export const copyright = "© 2024 Rénov Habitat-TLS. Tous droits réservés.";
+export const copyright = "© 2026 Rénov Habitat-TLS. Tous droits réservés.";
 
 // --- Pages de détail (services, à propos, avis, pages légales) ---
 
