@@ -46,8 +46,9 @@ export default function Footer() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-x-8 gap-y-[26px] py-[26px]">
           <div className="flex flex-col gap-[9px]">
             <h4 className="mt-0 mb-[3px] text-[13px] font-bold">Contact</h4>
-            <span className="text-[12.5px] text-[#C9C9D2]">{contact.phonePrimaryDisplay}</span>
-            <span className="text-[12.5px] text-[#C9C9D2]">{contact.phoneSecondaryDisplay}</span>
+            <a href={contact.phonePrimaryHref} className="text-[12.5px] text-[#C9C9D2] hover:text-white">
+              {contact.phonePrimaryDisplay}
+            </a>
             <span className="text-[12.5px] text-[#C9C9D2]">{contact.email}</span>
             <span className="text-[12.5px] text-[#C9C9D2]">{contact.city}</span>
           </div>

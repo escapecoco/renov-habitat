@@ -6,13 +6,10 @@ export const brand = {
   legalName: "Rénov Habitat-TLS",
 };
 
-// ⚠️ Numéros à remplacer par les vrais numéros de l'entreprise avant mise en ligne définitive.
 export const contact = {
   emergencyLabel: "Service d'urgence 24h/24 et 7j/7",
-  phonePrimaryDisplay: "05 61 00 00 00",
-  phonePrimaryHref: "tel:0561000000",
-  phoneSecondaryDisplay: "06 00 00 00 00",
-  phoneSecondaryHref: "tel:0600000000",
+  phonePrimaryDisplay: "07 51 25 92 98",
+  phonePrimaryHref: "tel:+33751259298",
   email: "contact@renovhabitat-tls.fr",
   emailHref: "mailto:contact@renovhabitat-tls.fr",
   city: "Toulouse, France",

@@ -48,9 +48,9 @@ export default function Header() {
 
         <div className="hidden flex-col gap-0.5 text-[11px] leading-[1.35] text-body sm:flex">
           <span>{contact.emergencyLabel}</span>
-          <span className="font-bold text-ink">
-            {contact.phonePrimaryDisplay} ou {contact.phoneSecondaryDisplay}
-          </span>
+          <a href={contact.phonePrimaryHref} className="font-bold text-ink hover:text-blue">
+            {contact.phonePrimaryDisplay}
+          </a>
         </div>
 
         <nav className="hidden items-center gap-[26px] text-[13px] font-medium text-[#2A2A33] sm:ml-auto sm:flex">
