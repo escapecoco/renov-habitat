@@ -5,7 +5,7 @@ import { contactForm } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Nous contacter | Rénov Habitat-TLS",
-  description: "Demandez une soumission gratuite en quelques étapes.",
+  description: "Demandez un devis gratuit en quelques étapes.",
 };
 
 export default function NousContacterPage() {

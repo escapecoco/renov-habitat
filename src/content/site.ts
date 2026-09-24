@@ -21,7 +21,7 @@ export const contact = {
 // L'envoi passe par le Worker Cloudflare (voir worker/index.ts) via Email
 // Routing — ne fonctionnera qu'une fois un domaine connecté à Cloudflare.
 export const contactForm = {
-  heading: "Demander une soumission gratuite",
+  heading: "Demander un devis gratuit",
   intro:
     "Quatre étapes, deux minutes. On vous répond sous 24h — plus vite encore en cas d'urgence.",
   successTitle: "Demande envoyée !",
@@ -40,7 +40,7 @@ export const nav = [
   { label: "À propos", href: "/a-propos" },
 ];
 
-export const ctaLabel = "Obtenir une soumission gratuite";
+export const ctaLabel = "Obtenir un devis gratuit";
 
 export const hero = {
   heading: "Redonnez vie à votre maison avec des experts en rénovation",
@@ -309,7 +309,7 @@ export const aboutPage = {
     },
     {
       title: "Transparence",
-      body: "Des soumissions claires et un suivi de chantier honnête, sans coûts cachés.",
+      body: "Des devis clairs et un suivi de chantier honnête, sans coûts cachés.",
     },
     {
       title: "Métier",
@@ -386,11 +386,11 @@ export const privacyPolicy = {
   sections: [
     {
       title: "Renseignements que nous recueillons",
-      body: "Lorsque vous nous contactez ou demandez une soumission, nous recueillons les renseignements que vous nous fournissez volontairement : nom, coordonnées, adresse du chantier et description des travaux ou du sinistre.",
+      body: "Lorsque vous nous contactez ou demandez un devis, nous recueillons les renseignements que vous nous fournissez volontairement : nom, coordonnées, adresse du chantier et description des travaux ou du sinistre.",
     },
     {
       title: "Utilisation des renseignements",
-      body: "Ces renseignements servent uniquement à préparer votre soumission, planifier une intervention et assurer le suivi de votre dossier, y compris avec votre assureur lorsque applicable.",
+      body: "Ces renseignements servent uniquement à préparer votre devis, planifier une intervention et assurer le suivi de votre dossier, y compris avec votre assureur lorsque applicable.",
     },
     {
       title: "Partage des renseignements",
@@ -412,7 +412,7 @@ export const termsOfUse = {
   sections: [
     {
       title: "Objet du site",
-      body: "Ce site présente les services de rénovation et de remise en état de Rénov Habitat-TLS. Il a un but informatif et ne constitue pas une soumission ferme tant qu'un devis écrit n'a pas été émis.",
+      body: "Ce site présente les services de rénovation et de remise en état de Rénov Habitat-TLS. Il a un but informatif et ne constitue pas un engagement ferme tant qu'un devis écrit n'a pas été émis.",
     },
     {
       title: "Exactitude du contenu",
@@ -424,7 +424,7 @@ export const termsOfUse = {
     },
     {
       title: "Garanties de travaux",
-      body: "Les garanties applicables à nos travaux sont précisées dans chaque soumission écrite et peuvent varier selon la nature du projet.",
+      body: "Les garanties applicables à nos travaux sont précisées dans chaque devis écrit et peuvent varier selon la nature du projet.",
     },
     {
       title: "Limitation de responsabilité",
